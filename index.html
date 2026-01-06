@@ -1,26 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Exispace</title>
+
+  <!-- запрещаем автоперевод -->
+  <meta name="google" content="notranslate">
+
   <style>
     body {
       margin: 0;
       height: 100vh;
+      background: #000000;
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #ffffff;
-      color: #000000;
-      font-family: Arial, sans-serif;
-      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: center;
+    }
+
+    .container {
+      font-size: 42px;
+      line-height: 1.4;
+    }
+
+    .no {
+      font-weight: bold;
+      font-size: 56px;
+      margin: 20px 0;
+    }
+
+    .date {
+      font-size: 32px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div>
-    0 normal days since March 19, 2019
+  <div class="container">
+    <div>Is today normal?</div>
+    <div class="no">NO.</div>
+    <div>Last normal day:</div>
+    <div class="date">March 2019</div>
   </div>
 </body>
 </html>
